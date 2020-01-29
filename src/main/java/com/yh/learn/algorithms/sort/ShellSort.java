@@ -1,4 +1,4 @@
-package com.yh.learn.algorithms;
+package com.yh.learn.algorithms.sort;
 
 /**
  * 希尔排序(属于插入排序的一种，改良版插入排序)

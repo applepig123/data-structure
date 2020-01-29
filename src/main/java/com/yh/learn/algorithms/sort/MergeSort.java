@@ -1,4 +1,4 @@
-package com.yh.learn.algorithms;
+package com.yh.learn.algorithms.sort;
 
 /**
  * Created by yanghua on 2019/4/6.
@@ -50,19 +50,16 @@ public class MergeSort implements Sort {
         }
 
         //将两个list中剩下没有取出的元素放到temp中
-        if(i <= mid) {
-            while (i <= mid) {
-                temp[k] = arr[i];
-                i ++;
-                k ++;
-            }
+        while (i <= mid) {
+            temp[k] = arr[i];
+            i ++;
+            k ++;
         }
-        if(j <= right) {
-            while (j <= right) {
-                temp[k] = arr[j];
-                j ++;
-                k ++;
-            }
+
+        while (j <= right) {
+            temp[k] = arr[j];
+            j ++;
+            k ++;
         }
 
         //将temp中已排序好的list复制到原数组中

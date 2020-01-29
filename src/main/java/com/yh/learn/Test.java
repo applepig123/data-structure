@@ -1,8 +1,7 @@
 package com.yh.learn;
 
-import com.yh.learn.algorithms.MergeSort;
-import com.yh.learn.algorithms.QuickSort;
-import com.yh.learn.algorithms.Sort;
+import com.yh.learn.algorithms.sort.QuickSort;
+import com.yh.learn.algorithms.sort.Sort;
 
 import java.util.Random;
 

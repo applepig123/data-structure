@@ -1,4 +1,4 @@
-package com.yh.learn.algorithms;
+package com.yh.learn.algorithms.sort;
 
 /**
  * 普通插入排序

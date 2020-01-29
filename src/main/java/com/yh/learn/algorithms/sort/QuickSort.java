@@ -1,4 +1,4 @@
-package com.yh.learn.algorithms;
+package com.yh.learn.algorithms.sort;
 
 /**
  * Created by yanghua on 2019/4/7.
