@@ -1,20 +1,18 @@
-package com.yh.learn;
+package com.yh.learn.algorithms.sort.test;
 
-import com.yh.learn.algorithms.sort.TopM;
+import com.yh.learn.algorithms.sort.InverseNumber;
 
 import java.util.Random;
 
-/**
- * Created by yanghua on 2019/4/6.
- */
-public class Test {
+public class TestInverseNumber {
+
     public static void main(String[] args) {
-        int[] arr = randomArray(0, 10, 10);
+        int[] arr = randomArray(0, 10, 4);
+//        int[] arr = {2,6,3,4,5,1};
         printList(arr);
         System.out.println("--------------------");
-//        Sort sort = new QuickSort(arr);
-        TopM topM = new TopM(arr, 5);
-        printList(topM.get());
+        InverseNumber inverseNumber = new InverseNumber(arr);
+        System.out.println(inverseNumber.getInverseNumCount());
     }
 
     public static int[] randomArray(int min, int max, int length) {
