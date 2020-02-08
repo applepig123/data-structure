@@ -21,11 +21,9 @@ public class LongestPalindromeSubstring {
         int len = srcStr.length();
         dp = new boolean[len][len];
 
-        for(int i=0;i<len;i++) {
-            dp[i][i] = true;
-        }
         int left = 0, right = 0;
-        for(int i=len-2;i>0;i--) {
+        for(int i=len-2;i>=0;i--) {
+            dp[i][i] = true;
             for(int j=i+1;j<len;j++) {
                 if(srcStr.charAt(i) == srcStr.charAt(j) && dp[i+1][j-1]) {
                     dp[i][j] = true;
