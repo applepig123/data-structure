@@ -9,8 +9,8 @@ package com.yh.learn.algorithms.dynamicprogram;
  * 状态是字符的索引index
  * 状态转移方程：
  *      当 maxLen[i-1]==i-1 时
- *      当 str[i]==str[i-1]时，maxLen[i]=i
- *      当 str[i]!=str[i-1]时，maxLen[i]=i-1
+ *          当 str[i]==str[i-1]时，maxLen[i]=i
+ *          当 str[i]!=str[i-1]时，maxLen[i]=i-1
  *      当 maxLen[i-1]!=i-1 时
  *          遍历从 maxLen[i-1]到i-1的字符，从后往前遍历，如果找到第一个重复字符，则maxLen[i]=第一个重复字符index + 1；没有找到则maxLen[i]=max[i-1]。
  */

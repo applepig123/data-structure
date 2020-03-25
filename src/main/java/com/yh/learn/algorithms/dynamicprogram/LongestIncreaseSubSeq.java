@@ -40,7 +40,7 @@ public class LongestIncreaseSubSeq {
         // 第i位置数结尾的最长上升子序列长度，假如 a[i] > a[j]，则可以由a[j]推到出 a[i] = a[j] + 1，因为a[i]左边任何“终点”
         // 小于a[i]的子序列，加上a[i]后就能形成一个更长大的上升子序列
 
-        // 因为前面已经排除了0，所以从index 1 开始
+        // 因为i=0前面没有子序列，所以从index 1 开始
         for(int i=1;i<maxLenList.length;i++) {
             //遍历 i 前面数的最长上升子序列长度
             for(int j=0;j<i;j++) {
